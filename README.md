@@ -23,12 +23,12 @@ Between the server and client, you'll need two terminal tabs! Because we're usin
 
 ## BASE MODE
 
-- Use `axios` to retrieve (**GET**) data from to `/gallery` and store it in `App.js`.
+- Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.js`.
 - Create a new **component** called `GalleryItem.js` and pass it the individual gallery items via `props`. 
 - Display all of the images on the screen along with the title.
 - Swap the image with the description on click.
 - Display the number likes for each item and include a like button.
-- When the like button is clicked, use `Axios` to update (**PUT**) the like count `/gallery/like/:id`.
+- When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`.
 - Update the gallery each time a like button is clicked.
 
 ### Wireframes
@@ -43,13 +43,13 @@ Between the server and client, you'll need two terminal tabs! Because we're usin
 
 **Do not start on stretch goals until ALL of base mode is complete. Some of these will require additional research.**
 
-- Add styling with Material-UI (https://material-ui-next.com/)[https://material-ui-next.com/]
+- Add styling with Material-UI [https://material-ui-next.com/](https://material-ui-next.com/)
 - Create a new **component** for the `GalleryList`
 - Move the data into a database (either mongo or postgresql)
 - Add a form (new **compontent**) that allows a user to POST a new gallery item
   - Client side form (use absolute URL for images)
   - Server side route for posting an image
 - Ability to delete a gallery item
-- Implement (file stack)[https://www.filestack.com/] for image upload 
+- Implement [file stack](https://www.filestack.com/) for image upload 
 
 > NOTE: The above stretch goals are intended to be completed in order.

@@ -1,28 +1,3 @@
-# Live Solve
-
-- build out html/css ui
-- get layout working in app component
-- move card to dumb component
-
-- put mock data into app component, state
-  - update render for a list of cards
-  - image still defined in the card as a variable as there is no static server yet
-  - remember this.props.cardDetails.whatever!
-
-- move cards to CardList component
-
-- get behaviors working - data flowing 
-  - onclick for show/hide text
-- break down into further components?    
-
-- get data from server to replace mock data
-  - install axios
-
-- like to server
-- refresh data
-
-
-
 # React - Gallery of My Life
 
 Before you get started make sure to look through the code that has been provided. Server side code to retrieve data (`GET`) and like a photo (`PUT`) have been provided for you. For practice, we recommend testing out these routes in Postman. You should not need to modify these routes for base mode.

@@ -1,0 +1,19 @@
+.GalleryItem {
+    width: 250px;
+    height: 320px;
+    border: 1px solid gray;
+    margin: 10px;
+    /* controls my content: image, button, etc. */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+}
+.GalleryItem img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 20px;            
+}
+.GalleryItem-likeButton {
+    font-size: 3em;
+}

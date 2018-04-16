@@ -1,15 +1,22 @@
 # TO DO List
 
-- [ ] build out html/css ui
-- [ ] get layout working in app component
-- [ ] move card to dumb component
-- [ ] put mock data into app component
-- [ ] get array of data working, loop over
-- [ ] use props in GalleryItem 
+- [x] build out html/css ui
+- [x] get layout working in app component
+- [x] move card to dumb component
+- [x] put mock data into app component
+- [x] get array of data working, loop over
+- [x] use props in GalleryItem 
   - remember this.props.object.whatever!
+
+- [x] move gallery array display to gallery list
+ - [x] map stuff
+ - [x] accept gallery array as props
+
 - [ ] onclick for show/hide text
+
 - [ ] bring in data from server to replace mock data
   - [ ] get request, populate list
+  
 - [ ] implement likes
   - [ ] post to server (note bind issue!)
   - [ ] refresh data

@@ -9,10 +9,22 @@
     align-items: center;
     
 }
-.GalleryItem img {
+.GalleryItem-details {
     width: 200px;
     height: 200px;
-    margin: 10px 10px 20px;            
+    margin: 10px 10px 20px; 
+    overflow: hidden;
+    background-size: 200px;
+    border: 1px solid gray;
+}
+.GalleryItem-details p {
+    text-align: left;
+    margin: auto 10px;
+    font-size: 14px;
+}
+.GalleryItem-details img {
+    width: 200px;
+    height: 200px;          
 }
 .GalleryItem-likeButton {
     font-size: 3em;

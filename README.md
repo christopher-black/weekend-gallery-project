@@ -12,14 +12,14 @@
  - [x] map stuff
  - [x] accept gallery array as props
 
-- [ ] onclick for show/hide text
+- [x] onclick for show/hide text
 
-- [ ] bring in data from server to replace mock data
-  - [ ] get request, populate list
-  
-- [ ] implement likes
-  - [ ] post to server (note bind issue!)
-  - [ ] refresh data
+- [x] bring in data from server to replace mock data
+  - [x] get request, populate list
+
+- [x] implement likes
+  - [x] post to server (note bind issue!)!!!
+  - [x] refresh data
 
 # React - Gallery of My Life
 

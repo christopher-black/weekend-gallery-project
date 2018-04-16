@@ -5,7 +5,7 @@ class GalleryList extends Component {
     render() {
         // array
         const data = this.props.galleryItems.map((item) => {
-            return <GalleryItem key={item.id} itemInfo={item} />
+            return <GalleryItem key={item.id} itemInfo={item} addLike={this.props.addLike} />
         });
 
         console.log('data in render', data);

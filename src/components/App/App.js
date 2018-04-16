@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList';
 
@@ -8,14 +9,41 @@ class App extends Component {
     super();
 
     this.state = {
-      galleryItems: [
-        { id: 1, path: 'images/luca-breakfast.jpg', description: 'My son Luca is hilarious at breakfast!', likes: 10 },
-        { id: 2, path: 'images/gretzky.jpg', description: 'The Great One!', likes: 3 },
-      ]
+      galleryItems: []
     }
 
   }
 
+  componentDidMount() {
+    this.getGalleryData();
+  }
+
+  getGalleryData() {  // only called from this class
+    axios.get('/gallery')
+      .then((response) => {
+        console.log('get response', response.data);
+        this.setState({
+          galleryItems: response.data
+        });
+      })
+      .catch((error) => {
+        console.log('get error', error);        
+      });
+  }
+
+  addLike = (item) => { // called from other classes, 'this' must be bound
+    console.log('updating likes for: ', item.id);
+    
+    axios.put(`/gallery/like/${item.id}`)
+    // axios.put('/gallery/like/' + item.id)
+      .then((response) => {
+        console.log('put like response', response.data);
+        this.getGalleryData();
+      })
+      .catch((error) => {
+        console.log('put like error', error);
+      });
+  }
 
   render() {
     return (
@@ -25,7 +53,7 @@ class App extends Component {
         </header> 
 
         <div className="Gallery">
-          <GalleryList galleryItems={this.state.galleryItems} />
+          <GalleryList galleryItems={this.state.galleryItems} addLike={this.addLike} />
         </div>
       </div>
     );

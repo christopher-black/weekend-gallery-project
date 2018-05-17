@@ -28,4 +28,9 @@
 }
 .GalleryItem-likeButton {
     font-size: 3em;
+    border: 0;
+}
+.GalleryItem-likeButton:hover {
+    color: blue;
+    cursor: pointer;
 }
